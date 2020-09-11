@@ -1,0 +1,23 @@
+.is-searc-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .input-content {
+        width: 100%;
+        .rs-input-group {
+            border-style: solid;
+            border-width: 1px;
+        }
+    }
+
+    .button-iss {
+        width: 120px;
+        margin-left: 10px;
+
+        @media screen and (max-width: 720px) {
+            display: none;
+        }
+    }
+}

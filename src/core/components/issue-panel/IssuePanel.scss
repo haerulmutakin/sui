@@ -1,0 +1,76 @@
+.issue-panel-container {
+    // background: #FFFFFF;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding: 10px 20px 10px 10px;
+    min-height: 40px;
+    margin-bottom: 10px;
+
+    .ellipsis-icon {
+        color: #8e8e93;
+        font-size: 13px;
+        position: absolute;
+        top: 2px;
+        right: 8px;
+    }
+
+    .comment-icon {
+        color: #8e8e93;
+        font-size: 12px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        span {
+            font-size: 12px;
+            margin: 0 4px;
+        }
+        svg {
+            font-size: 4px;
+        }
+    }
+
+    // .issue-title, .issue-desc {
+    //     color: #595858;
+    // }
+
+    .issue-title {
+        font-size: 14px;
+    }
+
+    .issue-desc {
+        margin-top: 1px;
+        font-size: 11px;
+        line-height: 12px;
+        .action-user {
+            font-weight: bold;
+        }
+    }
+
+    .issue-left-content {
+        margin-top: 10px;;
+        display: flex;
+    }
+
+    .iss-issue-status {
+        font-size: 12px;
+        padding: 0 5px;
+        font-weight: bold;
+        color: #FFFFFF;
+        border-radius: 3px;
+        margin-right: 10px;
+    }
+
+    .open {
+        background: #ff9901;
+    }
+
+    .closed {
+        background: #ff00df;
+    }
+
+    .reopen {
+        background: #ff540d;
+    }
+}
