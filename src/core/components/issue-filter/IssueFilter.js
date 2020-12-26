@@ -1,15 +1,23 @@
 import React from 'react';
 import './IssueFilter.scss';
-import { Dropdown } from 'rsuite';
+import { Dropdown, Button, Badge } from 'rsuite';
 
 function IssueFilter () {
     return (
         <div className="is-filter-container">
             <div className="left-filter">
-                <label>Closed</label>
-                <label>Open</label>
-                <label>Watched Issue</label>
-                <label>My Issue</label>
+                <Badge content="90+">
+                    <Button>Open</Button>
+                </Badge>
+                <Badge content="90+">
+                    <Button>Closed</Button>
+                </Badge>
+                <Badge content="12">
+                    <Button>Watched</Button>
+                </Badge>
+                <Badge content="7">
+                    <Button>My Issue</Button>
+                </Badge>
             </div>
             <div className="right-filter">
                 <Dropdown title="Application" placement="bottomEnd" style={{fontWeight: 'bold'}}>

@@ -1,0 +1,22 @@
+.rs-popover {
+    border-width: 1px;
+    border-style: solid;
+    padding: 0 !important;
+    .rs-popover-arrow {
+        display: none !important;
+    }
+}
+
+.rs-dropdown {
+    .rs-dropdown-menu {
+        border-width: 1px;
+        border-style: solid;
+        border-color: yellow;
+    }
+}
+
+.rs-btn {
+    &.rs-btn-default {
+        background: transparent;
+    }
+}

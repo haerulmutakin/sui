@@ -58,7 +58,6 @@
     img {
         width: 50px;
         border-radius: 8px;
-        border: 1px solid #D3D1D1;
     }
     margin-right: 10px;
 }
@@ -75,9 +74,7 @@
     }
 }
 
-
 .iss-popover {
-    width: 300px;
     padding: 5px;
 
     ul {
@@ -92,4 +89,18 @@
             }
         }
     }
+
+    @media screen and (min-width: 721px) {
+        min-width: 250px;
+    }
+}
+
+.iss-button-bell {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
 }

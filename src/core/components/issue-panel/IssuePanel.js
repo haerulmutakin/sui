@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisH, faCircle } from '@fortawesome/free-solid-svg-icons';
 import { Whisper, Popover, Dropdown } from 'rsuite';
 
+import { history } from 'core/_helpers/RouteHistory';
+
 const MenuPopover = ({ onSelect, ...rest }) => (
     <Popover {...rest} full>
       <Dropdown.Menu onSelect={onSelect} style={{width: '200px'}}>
@@ -20,8 +22,12 @@ function IssuePanel (props) {
         triggerRef.current.hide();
     }
 
+    function HandlePanelClick() {
+        history.push('issue/' + props.issue.id);
+    }
+
     return(
-        <div className="issue-panel-container">
+        <div className="issue-panel-container" onClick={HandlePanelClick}>
             <span className="ellipsis-icon absolute">
                 <Whisper placement="bottomEnd" trigger="click" triggerRef={triggerRef} speaker={<MenuPopover onSelect={handleSelectMenu} />}>
                     <FontAwesomeIcon icon={faEllipsisH} />

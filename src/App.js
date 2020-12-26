@@ -7,7 +7,7 @@ import Core from 'core/Core';
 function App() {
   return (
     <Switch>
-      <Route exact path="/" component={Core} />
+      <Route path="/" component={Core} />
     </Switch>
   );
 }

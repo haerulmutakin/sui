@@ -1,0 +1,80 @@
+.iss-detail-title {
+    font-weight: 700;
+    font-size: 15px !important;
+
+    @media screen and (max-width: 720px) {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+.iss-status-container {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    .iss-status-btn {
+        background: #FF540D;
+        margin-right: 10px;
+        color: #FFFFFF;
+        padding: 0;
+        display: flex;
+        span {
+            padding: 5px 8px;
+            border-right: 1px solid white;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 8px;
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width: 720px) {
+        width: 95%;
+        margin: 10px auto;
+    }
+}
+
+.iss-author {
+    font-size: 12px;
+    span {
+        font-weight: bold;
+    }
+}
+
+.iss-comments-container {
+    width: 100%;
+    padding: 10px;
+}
+
+ul.iss-comments {
+    padding: 0;
+    list-style: none;
+    li.iss-comment-item {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .iss-user-comment-profile {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+        border-radius: 6px;
+    }
+}
+
+.iss-comment {
+    .iss-user-comment-name {
+        font-weight: bold;
+        span {
+            font-weight: 600;
+            font-size: 12px;
+        }
+    }
+
+    .iss-comment-text {
+        margin-top: 0;
+    }
+}

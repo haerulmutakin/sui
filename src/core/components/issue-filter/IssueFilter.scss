@@ -9,19 +9,22 @@
 
     @media screen and (max-width: 720px){
         flex-direction: column;
+        .left-filter {
+            margin-bottom: 5px;
+        }
     }
 }
 
 .left-filter {
-    label {
-        cursor: pointer;
-        padding: 8px 12px;
-        border-radius: 6px;
+    button {
+        margin-right: 10px;
         color: #8e8e93;
-        transition: color 0.2s linear, background-color 0.3s linear;
         &:hover {
-            background: #f7f7fa;
-            color: #575757;
+            background: #f1f2f5 !important;
         }
+    }
+    .rs-badge-content {
+        top: 5px !important;
+        right: 22px !important;
     }
 }

@@ -5,7 +5,7 @@ import { faMoon, faSignOutAlt, faCog, faBell } from '@fortawesome/free-solid-svg
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const MenuPopover = ({ onSelect, onThemToggle , ...rest }) => (
-    <Popover {...rest} full>
+    <Popover {...rest}>
         <div className="iss-popover">
             <ul>
                 <li className="iss-user-detail">
@@ -44,16 +44,14 @@ function Header (props) {
     return (
         <div className="iss-header">
             <div className="iss-brand">
-                <img className="brand-logo" src={process.env.PUBLIC_URL + '/iss-app-logo.png'} alt=""/> ISS
+                <img className="brand-logo" src={process.env.PUBLIC_URL + '/iss-app-logo.png'} alt=""/> SUI
             </div>
             <div className="iss-nav">
-                <Whisper placement="bottomEnd" trigger="click" triggerRef={triggerRef} speaker={<MenuPopover onSelect={handleSelectMenu} />}>
+                <Whisper placement="bottom" trigger="click" triggerRef={triggerRef} speaker={<MenuPopover onSelect={handleSelectMenu} />}>
                     <Badge content='4'>
-                        <Button className="iss-button-bell">
-                            <span className="iss-nav-icon bell">
-                                <FontAwesomeIcon icon={faBell} />
-                            </span>
-                        </Button>
+                        <div className="iss-button-bell">
+                            <FontAwesomeIcon icon={faBell} />
+                        </div>
                     </Badge>
                 </Whisper>
                 <Whisper placement="bottomEnd" trigger="click" speaker={<MenuPopover theme={props.theme} onThemToggle={() => props.onThemeChange()} />}>
